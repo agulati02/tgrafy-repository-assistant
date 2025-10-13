@@ -40,3 +40,8 @@ TGRAFY's source code is distributed accross the below two repositories:
 
 - Webhook Handler [🔗](https://github.com/agulati02/webhook-handler-lambda)
 - Review Handler [🔗](https://example.com)
+
+<br/>
+
+🖋️ **Author:** Anurag Gulati [🔗](https://github.com/agulati02)
+
