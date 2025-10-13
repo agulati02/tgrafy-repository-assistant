@@ -20,6 +20,7 @@ Our little helper is powered by a decoupled AWS-native application, that leverag
 <img src="./assets/hlsd.svg" alt="High Level System Design" />
 
 **2. Walkthrough & Rationale**
+
 When installed, TGRAFY subscribes to the below events in the repository:
 
 <ul>
