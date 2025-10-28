@@ -10,7 +10,7 @@
 </ul>
 
 ### Installation
-You can hire TGRAFY as a GitHub app, and install it [here](https://github.com/apps/tgrafy). It is recommended to go through the [installation steps](https://example.com) and [user guide](https://example.com), to get TGRAFY to do exactly what you need 😃. 
+[TGRAFY](https://example.com) is installable as a GitHub app. You need to follow the [setup](https://example.com) and [usage](https://example.com) guides, to get the most out of it. 
 
 ### What powers TGRAFY?
 Our little helper is powered by a decoupled AWS-native application, that leverages a serverless design for resource and cost optimization.
@@ -31,15 +31,18 @@ When installed, TGRAFY subscribes to the below events in the repository:
   <li>Pull request review comment</li>
 </ul>
 
-The subscription is powered by GitHub's webhook call to TGRAFY, which is handled by an AWS Lambda function. Since, these webhook calls are configured with a 10-second timeout, it is not feasible on a single Lambda to handle the review process. The webhook handler returns an initial response (a greeting comment in case of reviewer assignment) and pushes the event to a task queue, which is implemented as a standard SQS queue.
+The subscription events are received via GitHub's webhook call to TGRAFY, which is handled by an AWS Lambda function. Since these webhook calls are configured with a 10-second timeout, it is not feasible for a single Lambda to handle the end-to-end review process. The webhook handler returns an initial response (a greeting comment in case of reviewer assignment) and pushes the event to a task queue, which is implemented using a standard SQS queue.
 
 The SQS message triggers a review handler Lambda, which is responsible for prompting the LLM (Claude Sonnet 3.5 in the current state) with the repository context, and publish the review to the PR discussion thread.
 
 ### Source Code
-TGRAFY's source code is distributed accross the below two repositories:
+TGRAFY's source code is distributed accross the following repositories:
 
-- Webhook Handler [🔗](https://github.com/agulati02/webhook-handler-lambda)
-- Review Handler [🔗](https://example.com)
+- Webhook Handler: *[webhook-handler-lambda](https://github.com/agulati02/webhook-handler-lambda)*
+- Review Handler: *[review-handler-lambda](https://github.com/agulati02/review-handler-lambda)*
+- Dashboard Service: *[tgrafy-dashboard-service](https://example.com)*
+- Common Backend Utilities: *[tgrafy-commons](https://github.com/agulati02/tgrafy-commons)*
+- Dashboard UI: *[tgrafy-dashboard-frontend](https://example.com)*
 
 <br/>
 
