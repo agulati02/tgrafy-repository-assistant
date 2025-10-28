@@ -17,7 +17,7 @@ Our little helper is powered by a decoupled AWS-native application, that leverag
 
 **1. High-level System Design (HLSD)**
 
-<img src="./assets/tgrafy-to-be.drawio.svg" alt="High Level System Design" />
+<img src="./assets/tgrafy-to-be.drawio-2.svg" alt="High Level System Design" />
 
 **2. Walkthrough & Rationale**
 
