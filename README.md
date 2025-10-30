@@ -47,6 +47,7 @@ timeline
     section Nov 2025
         Feature Set B : Installation management backend : User management
         Feature Set C : Dashboard UI : GitHub OAuth integration
+        Feedback : MVP rollout : Feedback analysis
 ```
 
 ### Source Code
