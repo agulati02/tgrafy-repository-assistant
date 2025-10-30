@@ -35,6 +35,20 @@ The subscription events are received via GitHub's webhook call to TGRAFY, which 
 
 The SQS message triggers a review handler Lambda, which is responsible for prompting the LLM (Claude Sonnet 3.5 in the current state) with the repository context, and publish the review to the PR discussion thread.
 
+## Project Milestones & Roadmap
+
+```mermaid
+timeline
+    section Sept 2025
+        Initial Setup : System design : Project scaffolding : Repository structures
+    section Oct 2025
+        Foundation : AWS setup : LLM integration
+        Feature Set A : Review request : Issue comments : Status tracking backend
+    section Nov 2025
+        Feature Set B : Installation management backend : User management
+        Feature Set C : Dashboard UI : GitHub OAuth integration
+```
+
 ### Source Code
 TGRAFY's source code is distributed accross the following repositories:
 
