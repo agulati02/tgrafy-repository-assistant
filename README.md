@@ -42,12 +42,13 @@ timeline
     section Sept 2025
         Initial Setup : System design : Project scaffolding : Repository structures
     section Oct 2025
-        Foundation : AWS setup : LLM integration
-        Feature Set A : Review request : Issue comments : Status tracking backend
+        Dev Week 1 : Initial AWS setup : LLM integration
+        Dev Week 2 : Review request : Status tracking backend
     section Nov 2025
-        Feature Set B : Installation management backend : User management
-        Feature Set C : Dashboard UI : GitHub OAuth integration
-        Feedback : MVP rollout : Feedback analysis
+        Dev Week 3 : Handle issue comments : Dashboard service
+        Dev Week 4 : GitHub OAuth integration : Installation management
+        Dev Week 5 : Status tracking UI
+        Dev Week 6 : DLQ re-drive from UI
 ```
 
 ### Source Code
